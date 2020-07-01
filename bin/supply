@@ -1,0 +1,15 @@
+#!/bin/bash
+# This script provides dependencies for an app
+
+
+set -euo pipefail
+
+BUILD_DIR=$1
+CACHE_DIR=$2
+DEPS_DIR=$3
+DEPS_IDX=$4
+
+echo "-----> Running staging-error-buildpack"
+echo "-----> This buildpack will exit with exit code 1"
+
+exit 1
